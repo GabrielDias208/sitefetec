@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: century Gothic, Arial, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: .3s;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+button {
+    color: orange;
+    background-color: black;
+}
+
+header {
+    height: 120px;
+    background-color: #24A2EC;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.game {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #24A2EC;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#fetec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+style {
+    --background-color: #f0f0f0;
+    --font-color: #0f0f0f;
+}
+
+:host :root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #21b9f5;
+}
+
+@media (max-width: 1200px) {
+    header {
+        font-size: 2rem;
+    }
+    .game {
+        width: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        font-size: 1.5rem;
+    }
+    .game {
+        width: 90%;
+    }
+    .scratch {
+        left: 50px;
+        font-size: 30px; 
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        font-size: 1.2rem;
+    }
+    .scratch {
+        font-size: 24px;
+    }
+}
+.scratch {
+    display: flex;
+    position: absolute;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    top: 20px; 
+    left: 65%; 
+    transform: translateX(-50%); 
+}
+
